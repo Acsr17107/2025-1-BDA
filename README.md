@@ -33,6 +33,16 @@
 - 다음 데이터 공모전에 참가하는 방향으로 자유 데이터 활용
   - [교통데이터 공모전](https://www.bigdata-transportation.kr/pageant/dashboard/CMPE_000000000020041)
 
+## 가로로 데이터프레임 출력 함수
+```Python
+from IPython.display import display_html
+def display_side_by_side(*args):
+    """여러 데이터프레임 비교가 쉽게 옆쪽으로 표시한다"""
+    html_str=''
+    for df in args:
+        html_str += df.to_html() + '&nbsp;'*4
+    display_html(html_str.replace('table','table style="display:inline"'), raw=True)
+```
 ## Google Colab 셀 복사 및 붙여넣기 단축키
 
 - 🔹 셀 복사 & 붙여넣기 단축키
