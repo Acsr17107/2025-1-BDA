@@ -33,6 +33,9 @@
 - 다음 데이터 공모전에 참가하는 방향으로 자유 데이터 활용
   - [교통데이터 공모전](https://www.bigdata-transportation.kr/pageant/dashboard/CMPE_000000000020041)
 
+## 지도 시각화 수업 참조
+- [웹참조](https://pjh09050.tistory.com/11)
+  
 ## 가로로 데이터프레임 출력 함수
 ```Python
 from IPython.display import display_html
